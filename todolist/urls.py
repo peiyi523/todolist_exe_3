@@ -21,7 +21,7 @@ from app import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # path("", views.index),
+    path("", views.index),
     # 分配user主要進入點
     path("user/", include("user.urls")),
 ]
