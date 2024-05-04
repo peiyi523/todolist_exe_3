@@ -23,5 +23,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     # path("", views.index),
     # 分配user主要進入點
-    path("", include("user.urls")),
+    path("user/", include("user.urls")),
 ]

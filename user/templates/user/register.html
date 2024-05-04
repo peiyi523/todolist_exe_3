@@ -9,6 +9,12 @@
 
 <body>
     <h1>Register</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <!-- 有帶.as_p會讓表單格式化呈現 -->
+        <button type="submit">註冊</button>
+    </form>
 </body>
 
 </html>
